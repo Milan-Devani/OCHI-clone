@@ -1,0 +1,248 @@
+@font-face {
+  font-family: Neue Montreal;
+  src: url(../Fonts/NeueMontreal-Regular.ttf);
+}
+
+/* @font-face {
+  font-family: FoundersGrotesk;
+  src: url(../Fonts/FoundersGrotesk-Semibold.ttf);
+} */
+
+@font-face {
+  font-family: Founders Grotesk X-cond SmBd;
+  src: url(../Fonts/FoundersGrotesk-Semibold.ttf);
+}
+
+/* @font-face {
+  font-family: FoundersGrotesk;
+  src: url(../Fonts/FoundersGrotesk-Semibold\ \(1\).ttf);
+} */
+
+
+body{
+  font-family: Neue Montreal;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 0!important
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: Founders Grotesk X-cond SmBd;
+  line-height: 1.5;
+}
+
+.font-difrent{
+  font-family: Neue Montreal;
+}
+
+/*  */
+
+
+
+.box-img-div {
+  transition: all 0.5s;
+}
+
+.box-img-div:hover {
+  transform: scale(0.95);
+}
+
+.box-img {
+  transition: all 0.5s;
+}
+
+.box-img-div:hover .box-img {
+  transform: scale(1.1);
+}
+/*  */
+/* button */
+
+.icon {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  border-radius: 9999px;
+  overflow: hidden;
+  line-height: normal;
+}
+.icon::before, .icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.25s ease;
+  border-radius: 9999px;
+}
+.icon .i {
+  position: relative;
+  margin-top: 15px;
+  transition: all 0.25s ease;
+}
+
+.icon-enter::after {
+  box-shadow: inset 0 0 0 1px #212121;
+}
+.icon-enter::before {
+  border-radius: 0;
+  /* margin-left: -100%; */
+  margin-top: 36px;
+  box-shadow: inset 0 0 0 60px #212121;
+}
+.icon-enter:hover::before {
+  /* margin-left: 0; */
+  margin-top: 0px;
+}
+
+.icon-enter:hover .i{
+  color: #FFFFFF;
+}
+
+/* button-card */
+/* 1 */
+.icon-card-1 {
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  line-height: normal;
+}
+.icon-card-1::before, .icon-card-1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.25s ease;
+  border-radius: 9999px;
+}
+.icon-card-1 .i {
+  position: relative;
+  margin-top: 15px;
+  transition: all 0.25s ease;
+}
+
+.icon-card-1:hover{
+  border: 3px solid #000;
+}
+
+.icon-card-enter-1::after {
+  box-shadow: inset 0 0 0 1px #8db964;
+}
+.icon-card-enter-1::before {
+  border-radius: 0;
+  margin-top: 36px;
+  box-shadow: inset 0 0 0 60px #8db964;
+}
+.icon-card-enter-1:hover::before {
+  margin-top: 0px;
+}
+
+.icon-card-enter-1:hover .i{
+  color: #000000;
+}
+
+
+/* 2 */
+.icon-card-2 {
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  line-height: normal;
+}
+.icon-card-2::before, .icon-card-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.25s ease;
+  border-radius: 9999px;
+}
+.icon-card-2 .i {
+  position: relative;
+  margin-top: 15px;
+  transition: all 0.25s ease;
+}
+
+.icon-card-enter-2::after {
+  box-shadow: inset 0 0 0 1px #fdfdfd;
+}
+.icon-card-enter-2::before {
+  border-radius: 0;
+  margin-top: 36px;
+  box-shadow: inset 0 0 0 60px #fdfdfd;
+}
+.icon-card-enter-2:hover::before {
+  margin-top: 0px;
+}
+
+.icon-card-enter-2:hover .i{
+  color: #000000;
+}
+
+
+/* reuse btn */
+
+.btn-reuse {
+  align-items: center;
+}
+
+.btn-reuse .btn_reuse_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_Featured .btn_Featured_div .btn_Featured_div_span{
+  width: 10px;
+  height: 10px;
+  background-color: #FFFFFF;
+}
+
+.btn_landing .btn_landing_div .btn_landing_div_span{
+  width: 0px;
+  height: 0px;
+  background-color: #000;
+}
+
+.btn-reuse .btn_reuse_div .btn_reuse_div_span {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: all 0.5s; */
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-duration: .3s;
+}
+
+.btn_Featured .btn_Featured_div .btn_Featured_div_span i {
+  font-size: 5px !important;
+}
+.btn_landing .btn_landing_div .btn_landing_div_span i {
+  font-size: 16px !important;
+}
+
+/* Corrected hover selector */
+.btn_Featured:hover .btn_Featured_div_span{
+  width: 50px;
+  height: 50px;
+}
+
+.btn_landing:hover .btn_landing_div_span{
+  width: 33px;
+  height: 33px;
+}
+
+/* Corrected hover selector for changing icon color and size */
+.btn_Featured:hover .btn_Featured_div_span i {
+  color: #000 !important;
+  font-size: 16px !important;
+}
+
+.btn_landing:hover .btn_landing_div_span i{
+  color: #FFFFFF !important;
+}
+/* lamnding-btn */
+
